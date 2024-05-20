@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Tabs</title>
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            
+            // Display the random number
+            document.getElementById("randomNumber").textContent = "Random Number: " + randomNumber;
+            
+            // Open tabs for the random number between 1 and 100
+            openMultipleTabs(randomNumber);
+        }
+
+        function openMultipleTabs(randomNumber) {
+            // Define the URLs for each number
+            var urls = [
+                "https://theuselessweb.com", "https://shipyourenemiesglitter.com", "https://runpee.com", 
+                "https://koalastothemax.com", "https://pixelthoughts.co", "https://purrli.com",
+                "https://isitchristmas.com", "https://cat-bounce.com", "https://zoomquilt.org",
+                "https://everydayim.com", "https://fallingfalling.com", "https://ismycomputeron.com",
+                "https://omfgdogs.com", "https://donothingfor2minutes.com", "https://fallingguy.com",
+                "https://partridgegetslucky.com", "https://trypap.com", "https://randomthingstodo.com",
+                "https://whatsmystarbucksname.com", "https://cant-not-tweet-this.com", "https://dogs.are.the.most.moe",
+                "https://screamintothevoid.com", "https://honestlogans.com", "https://hashima-island.co.uk",
+                "https://yourworldoftext.com", "https://endless.horse", "https://into.time.com",
+                "https://dontevenreply.com", "https://egg.albinoblacksheep.com", "https://llamasong.albinoblacksheep.com",
+                "https://languageguesser.com", "https://myhovercraft.ominiglot.com", "https://maxwellcat.world",
+                "https://riggedcoinflip.com", "https://justdelete.me", "https://binaryclock.com",
+                "https://thebrickbible.com", "https://masasgames.com", "https://sandtris.com",
+                "https://deepsadness.com", "https://mf2fm.com/ratonage", "https://neal.fun",
+                "https://astroalpaca.com", "https://suika-game.io", "https://nodtotherhythm.com",
+                "https://spotthedifference.com", "https://swatblog.rtgp.xyz", "https://pink.newgrounds.com",
+                "https://notdayoftheweek.com", "https://bartbonte.com", "https://howmanypeopleareinspacerightnow.com",
+                "https://heartosis.itch.io", "https://peopleinspace.com", "https://nullingthevoid.com",
+                "https://alwaysjudgeabookbyitscover.com", "https://chillestmonkey.com", "https://wutdafuk.com",
+                "https://unicodesnowmanforyou.com", "https://potatoortomato.com", "https://boringboringboring.com",
+                "https://existentialcrisis.com", "https://onemillionlols.com", "https://muchbetterthanthis.com",
+                "https://potatosoftomato.com", "https://zoomquilt2.com", "https://cachemonet.com",
+                "https://corgi.orangesoap.com", "https://hey.com", "https://math.puzzle",
+                "https://staticnoise.com", "https://biglongnow.com", "https://nothingforever.com",
+                "https://touchpianist.com", "https://pointerpointer.com", "https://procatinator.com",
+                "https://hmpg.net", "https://corndogoncorndog.com", "https://whatthefuckshouldimakefordinner.com",
+                "https://notalwaysright.com", "https://drawastickman.com", "https://coldsouls.com",
+                "https://pointless.com", "https://postsecret.com", "https://forgetify.com",
+                "https://sneakycards.com", "https://mapcrunch.com", "https://weavesilk.com",
+                "https://hotel626.com", "https://stumbleupon.com", "https://flockdraw.com",
+                "https://bl.uk", "https://window-swap.com", "https://snapbubbles.com",
+                "https://pointerpointer.com", "https://therevolvinginternet.com", "https://cachemonet.com",
+                "https://zombo.com", "https://y8.com", "https://theinternetpatrol.com",
+                "https://papertoilet.com"
+            ];
+
+            // Open 20 tabs with the corresponding URL
+            for (var i = 0; i < 20; i++) {
+                window.open(urls[randomNumber - 1], '_blank');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Number Tabs</h1>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <p id="randomNumber"></p>
+
+    <a href="path_to_file" download="skibidi-dop-dop-dop-yes-yes">Download</a
+</body>
+</html>
